@@ -1,32 +1,36 @@
 @import url('reset.css');
 
 header p {
-	color: green;
+	color: darkgreen;
 }
 
-[class*="em"]{
+[class*="it"]{
 	color: purple;
 }
-
-
-.header {
-	color: aqua;
+h1 + p{
+	color: limegreen;
 }
-.list li {
-	color: ;
+li ~ li{
+	color: blue;
+}
+#culture {
+	color: red;
+}
+.header {
+}
+.list {
+
 }
 .item{
-	color: ;
-}
-.link{
 
 }
-.page {
+.link{
 }
 .culture span {
 	color: indigo;
 }
-.history {
+.history h2 {
+	color: yellowgreen;
 }
 .cousine {
 }
