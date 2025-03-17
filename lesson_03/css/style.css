@@ -1,0 +1,36 @@
+@import url('reset.css');
+
+header p {
+	color: green;
+}
+
+[class*="em"]{
+	color: purple;
+}
+
+
+.header {
+	color: aqua;
+}
+.list li {
+	color: ;
+}
+.item{
+	color: ;
+}
+.link{
+
+}
+.page {
+}
+.culture span {
+	color: indigo;
+}
+.history {
+}
+.cousine {
+}
+.travel {
+}
+.footer {
+}
