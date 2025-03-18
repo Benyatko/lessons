@@ -1,40 +1,76 @@
 @import url('reset.css');
-
+/* звернення до селектору тегу */
 header p {
 	color: darkgreen;
 }
-
-[class*="it"]{
+h3{
+	color: tomato;
+}
+/* Селектор * - звернення до усього/до будьчого 
+(шукає у назві класу сполучення літер "em")*/
+[class*="em"]{
 	color: purple;
 }
-h1 + p{
-	color: limegreen;
+/* Селектор класу */
+.culture {
+	color: slateblue;
 }
-li ~ li{
-	color: blue;
+/* Селектор id */
+#first{
+	color: orange;
 }
-#culture {
+/* Комбінації селекторів */
+h2.title{
 	color: red;
 }
-.header {
+/* Звернення до кількох класів */
+.second,
+.third{
+	color: MediumSeaGreen;
 }
-.list {
-
+/* Звернення до вкладених селекторів (звернення до тегу a класу .second)*/
+.second a{
+	color: violet;
 }
-.item{
-
+/* звернення до УСІХ обєктів з класом .travel-item але які містяться у класі .travel-list  */
+.travel-list .travel-item{
+	color: green;
 }
-.link{
+.text * {
+	color: blue;
 }
+/* звернення до елементів p 1го рівня  */
+.footer > p {
+	color: goldenrod;
+}
+/* до елементів a далі по коду */
+.travel ~ a{
+	color: red;
+} 
+/* до елемента a 1го по коду */
+.travel + a{
+	color: goldenrod;
+}
+/* ============================= */
 .culture span {
 	color: indigo;
 }
+.culture a{
+	color: red;
+}
+
 .history h2 {
 	color: yellowgreen;
 }
-.cousine {
+#travel {
+	color: lime;
 }
-.travel {
+.text a{
+	color: orange;
 }
-.footer {
+.second a{
+	color: red;
+}
+.third a{
+	color: orangered;
 }
