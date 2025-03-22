@@ -1,0 +1,80 @@
+@import url('reset.css');
+@import url('fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	color: #b2b0b0;
+}
+.title{
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 700;
+	font-style: oblique;
+	font-size: 64px;
+	color: #000;
+	text-align: center;
+	letter-spacing: 5px;
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+
+	text-shadow: 25px 15px 20px #618583;
+}
+.subtitle{
+	font-family: "Rooters", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 32px;
+	color: rgb(15, 65, 86);
+}
+h2{
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #1A1A1A;
+}
+.text{
+	color: #808080;
+	line-height: 1.5;
+}
+.one {
+	text-align: right;
+	color: #d6d3d3;
+}
+.one span{
+	text-decoration: line-through;
+	color: #808080;
+	text-decoration-color: red;
+}
+.two{
+	text-align: justify;
+	color: #adacac;
+	text-shadow: 5px 7px 5px #5e8a88;
+}
+.two span{
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: green;
+}
+.three{
+	color: #7c7b7b;
+	text-transform: capitalize;
+	word-spacing: 10px;
+}
+.four{
+	color: #414141;
+}
+.five{
+	color: #2c2c2c;
+	text-shadow: 5px 5px 10px #414141;
+}
+.six{
+	color: #1b1b1b;
+}
+.seven{
+	color: #000;
+	text-shadow: 5px 7px 5px #005853;
+	text-transform: uppercase;
+}
