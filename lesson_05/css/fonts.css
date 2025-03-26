@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'CircularStd-Book';
+	src: url('../fonts/CircularStd-Book.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'CircularStd-Bold';
+	src: url('../fonts/CircularStd-Bold.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Industry-Demi';
+	src: url('../fonts/Industry-Demi.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 600;
+}
