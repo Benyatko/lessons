@@ -211,6 +211,8 @@ body{
 	max-width: 500px;
 	line-height: 1.5;
 	text-align: justify;
+	max-height: 220px;
+	overflow: scroll;
 }
 .part3 p{
 	display: inline-block;
@@ -223,6 +225,11 @@ body{
 	display: inline;
 	background-color: #264d4d33;
 	padding-left: 30px;
+}
+.part4{
+	max-height: 200px;
+	overflow: auto;
+
 }
 
 .link{
