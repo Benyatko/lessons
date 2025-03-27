@@ -167,27 +167,32 @@ body{
 }
 /*=================================================*/
 .column{
-	background-color: #07ffda;
+	background-color: #845252;
 	margin: 0 auto;
 	overflow: hidden;
 	color: #c1bfbf;
 	padding: 100px 0;
+	max-width: 900px;
 }
 
 .items{
-	margin-left: -10px;
-	margin-right: -10px;
+	margin-left: -5px;
+	margin-right: -5px;
+	font-size: 0;
 }
 .item{
 	display: inline-block;
-	width: 33%;
+	width: 33.333%;
 	margin-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 	vertical-align: top;
-	background-color: #6767ff;
-	color: #34d4ba;
-	padding: 2%;
+}
+.content{
+	background-color: #317333;
+	font-size: 18px;
+	text-align: center;
+	padding: 30px 2%;
 }
 /*===================================================*/
 .test{
