@@ -54,6 +54,9 @@ h1{
 	display:inline-block;
 	max-width: 524px;
 	width: 100%;
+
+	padding-left: 5px;
+	padding-right: 5px;
 	margin-right: 118px;
 }
 .hydra-image img {
