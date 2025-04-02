@@ -126,12 +126,10 @@ h1{
 }
 .contact-item-phone {
 	background: url('../img/contacts/phone-call.svg') 47.5px 50% / 59px no-repeat;
-
 	border-left: 1px solid rgba(192, 183, 232, 0.33);
 }
 .contact-item-mail{
 	background: url('../img/contacts/mail.svg') 50px 50% / 65px no-repeat;
-
 	border-left: 1px solid rgba(192, 183, 232, 0.33);
 }
 
