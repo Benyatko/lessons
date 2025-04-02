@@ -44,14 +44,17 @@ h1{
 .hydra-body {
 	vertical-align: top;
 	padding: 100px 0px 50px 0px;
-	
+	margin-left: -5px;
+	margin-right: -5px;
+	font-size: 0;
 	background: url('../img/bg-decor/vector\ 7.svg') -76px 112px  no-repeat,
 					url('../img/bg-decor/vector\ 8.svg') -100px 390px no-repeat;
 }
 .hydra-image{
 	display:inline-block;
 	max-width: 524px;
-	width: 50%;
+	width: 100%;
+	margin-right: 118px;
 }
 .hydra-image img {
 	border-radius: 240px 100px 240px 100px;
@@ -63,7 +66,6 @@ h1{
 	max-width: 630px;
 	vertical-align: top;
 	width: 100%;
-	padding-left: 118px;
 }
 
 .content-hydra__title {
