@@ -51,16 +51,17 @@ h1{
 .hydra-image{
 	display:inline-block;
 	width: 50%;
-	
 }
 .hydra-image img {
 	border-radius: 240px 100px 240px 100px;
+	max-width: 524px;
+	width: 100%;
 }
 .hydra-content {
 	display: inline-block;
 	max-width: 630px;
 	vertical-align: top;
-	width: 50%;
+	width: 100%;
 
 }
 
@@ -121,7 +122,6 @@ h1{
 	vertical-align: top;
 	width: 33.333%;
 	margin: 25.5px 0;
-	
 }
 .contact-item-phone {
 	background: url('../img/contacts/phone-call.svg') 47.5px 50% / 59px no-repeat;
@@ -160,12 +160,12 @@ h1{
 	padding: 100px 0;
 	color: #808080;
 	line-height: 1.5;
-	
 }
 .descriptions__container {
 	max-width: 648px;
 }
-.text {
+
+.descriptions p {
 	margin-bottom: 20px;
 }
 .descriptions-list {
@@ -176,8 +176,6 @@ h1{
 	background: url('../img/descriptions/check.svg') left no-repeat;
 	margin-bottom: 14px;
 	padding-left: 28px;
-}
-.last-text {
 }
 
 .footer {
