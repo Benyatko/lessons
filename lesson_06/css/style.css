@@ -50,6 +50,7 @@ h1{
 }
 .hydra-image{
 	display:inline-block;
+	max-width: 524px;
 	width: 50%;
 }
 .hydra-image img {
@@ -62,7 +63,7 @@ h1{
 	max-width: 630px;
 	vertical-align: top;
 	width: 100%;
-
+	padding-left: 118px;
 }
 
 .content-hydra__title {
@@ -165,17 +166,19 @@ h1{
 	max-width: 648px;
 }
 
-.descriptions p {
+.descriptions p{
 	margin-bottom: 20px;
 }
+
 .descriptions-list {
 	margin-bottom: 20px;
 	line-height: 1.4;
 }
 .descriptions-list li{
-	background: url('../img/descriptions/check.svg') left no-repeat;
+	background: url('../img/descriptions/check.svg') 0 0 / 20px no-repeat;
 	margin-bottom: 14px;
 	padding-left: 28px;
+	min-height: 20px;
 }
 
 .footer {
