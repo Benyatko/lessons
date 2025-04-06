@@ -135,8 +135,11 @@ h2 span{
 	background: linear-gradient(0deg, rgba(65,38,114,1) 0%, rgba(255,255,255,0.1516981792717087) 100%);
 	color: #fff;
 }
-.game__container {
-
+.game h2{
+	color: #fffba7;
+	font-size: 64px;
+	font-weight: 700;
+	margin-bottom: 40px;
 }
 .game-body {
 	margin-right: -5px;
@@ -164,10 +167,8 @@ h2 span{
 	background-color: #00ff08;
 	font-size: 16px;	
 	width: 200px;
-
 }
 .part:nth-child(3) {
-
 	background-color: #6f22ff;
 	font-size: 18px;
 	padding: 0 0 150px 0;
@@ -290,4 +291,14 @@ h2 span{
 }
 .part:nth-child(10):hover + .part{
 	visibility: visible;
+}
+/*=====================footer=============================*/
+.footer{
+	background-color: #412672;
+	padding: 20px;
+}
+footer a{
+	font-size: 24px;
+	font-weight: 700;
+	color: #fffba7;
 }
