@@ -299,6 +299,13 @@ h2 span{
 	padding: 100px 0;
 	background: radial-gradient(circle, rgba(233,233,148,0.5214460784313726) 0%, rgba(65,38,114,1) 66%);
 }
+.example h2{
+	color: #fffba7;
+	font-size: 64px;
+	font-weight: 700;
+	margin-bottom: 50px;
+	text-align: left;
+}
 .example__container *{
 	margin-right: 30px;
 }
@@ -309,7 +316,7 @@ h2 span{
 	background-color: #412672;
 	margin-right: 30px;
 }
-.block:nth-child(1):hover{
+.block:nth-child(2):hover{
 	border-radius: 50%;
 	overflow: hidden;
 	color: #fff;
@@ -340,10 +347,10 @@ h2 span{
 .link:hover{
 	color: red;
 	text-decoration: underline;
-	padding: 5px;
 }
 a.block:active{
 	background-color: #4c67ff;
+	color: #fff;
 }
 
 /*=====================footer=============================*/
