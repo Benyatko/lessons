@@ -315,7 +315,7 @@ h2 span{
 	color: #fff;
 	font-weight: 700;
 }
-.input{
+.input-t{
 	display: inline-block;
 	margin-top: 30px;
 	width: 100px;
@@ -323,7 +323,7 @@ h2 span{
 	border-radius: 5px;
 	border: 1px solid #13471c;
 }
-.input:focus{
+.input-t:focus{
 	outline: none;
 	border: 1px solid #48ff16
 }
