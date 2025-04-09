@@ -1,0 +1,140 @@
+@import url('reset.css');
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	font-size: 24px;
+	font-weight: 700;
+	color: #fffcc4;
+}
+[class*='__container']{
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.page__container > *{
+	background-color: #fffcc416;
+}
+
+header{
+	padding: 100px 0px 30px 0px;
+}
+.header-logo{
+	background-color: #fffcc416;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+.header-logo img{
+	margin-right: 30px;
+}
+.header-icon{
+	display: inline-block;
+
+}
+.header-icons{
+	background-color: #fffcc416;
+	padding: 30px;
+}
+.header-icon *{
+	margin-right: 30px;
+}
+h1{
+	font-size: 64px;
+	font-weight: 700;
+	margin-bottom: 50px;
+	text-align: center;
+}
+p{
+	display: inline-block;
+}
+p:hover{
+	text-shadow: 5px 0px 30px #fff;
+	color: #fff200;
+}
+.image-hero{
+	padding: 30px;
+	margin-bottom: 30px;
+}
+.image-hero *:not(:last-child){
+	margin-bottom: 30px;
+}
+.icons{
+	margin-bottom: 30px;
+	padding: 30px;
+}
+.icon{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.icon img{
+	margin-right: 50px;
+}
+.founder{
+	padding: 30px;
+	margin-bottom: 30px;
+}
+.founder *:not(:last-child){
+	margin-bottom: 30px;
+}
+
+.founder-image img{
+	border-radius: 150px 0 150px 0;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+.founder-decor img{
+	margin-right: 30px;
+}
+
+.travelers {
+	padding: 30px;
+	margin-bottom: 30px;
+}
+.travelers > img{
+	background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+	filter: blur(2.200000047683716px);
+}
+.travelers *:not(:last-child){
+	margin-bottom: 30px;
+}
+.travelers-icons *{
+	display: inline-block;
+}
+.travelers-icons{
+	padding: 30px;
+	margin-left: -5px;
+	margin-right: -5px;
+	font-size: 0;
+	overflow: hidden;
+}
+.travelers-icon{
+	min-width: 135px;
+	width: 25%;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin: 0 auto;
+}
+.tarvelers-subtitle{
+	padding: 0px 0px 30px 30px;
+	margin-bottom: 30px;
+}
+
+.image-example-1{
+	padding: 30px;
+	margin-bottom: 30px;
+}
+.image-example-1 img{
+	margin-bottom: 30px;
+}
+.image-example-2{
+	padding: 30px;
+}
+.image-example-2 img{
+	margin-bottom: 30px;
+}
+
+footer{
+	padding: 30px 0px 20px 0px;
+}
