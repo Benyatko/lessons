@@ -50,24 +50,19 @@ h1{
 	padding: 50px 0;
 }
 .business {
+	position: relative;
 	background: url('../img/business/bg/rectangle-bg.avif') no-repeat;
 	background-size: 100% 100%;
 }
-
-.business__container {
-
+.business h2{
+	position: absolute;
+	font-size: 120px;
+	font-weight: 700;
+	color: #5A54F2;
+	letter-spacing: 5px;
+	top: -70px;
+	right: 100px;
 }
-.business__body {
-
-}
-.body-bussiness {
-}
-.body-bussiness__top {
-}
-.top-business {
-}
-
-
 .top-business__content {
 	display: inline-block;
 	position: relative;
@@ -165,6 +160,15 @@ h1{
 	font-size: 14px;
 	line-height: 1.5;
 }
+.eco h2{
+	position: absolute;
+	top: 100px;
+	left: 600px;
+	font-size: 280px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	color: #9494941a;
+}
 .eco a:hover{
 	color: #2C742F;
 }
@@ -175,13 +179,14 @@ h1{
 	line-height: 1.5;
 }
 .eco {
-	padding: 100px 0;
+	position: relative;
+	padding: 150px 0 50px 0;
 	color: #4D4D4D;
 }
 .eco__container {
-
 }
 .eco__card {
+	margin-left: 100px;
 	max-width: 264px;
 	border: 1px solid #E6E6E6;
 }
@@ -206,13 +211,6 @@ h1{
 }
 .image-eco a:nth-child(n + 3):hover path{
 	stroke: #fff;
-}
-
-
-.card-eco {
-
-}
-.card-eco__content {
 }
 .content-eco {
 	position: relative;
@@ -275,8 +273,6 @@ svg{
 .content-eco__info{
 	padding: 0px 16px 16px 16px;
 }
-.content-eco__rating {
-}
 /*=================footer=======================*/
 
 .footer {
@@ -288,7 +284,7 @@ svg{
 	font-size: 28px;
 	color: #4D4D4D;
 	font-weight: 500;
-	border: 2px solid #a7a7a7;
+	border: 1px solid #a7a7a7;
 }
 .footer a:hover{
 	border-color: #000;
