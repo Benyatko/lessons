@@ -565,6 +565,6 @@ h1{
 	visibility: hidden;
 }
 
-.island-body__block:nth-child(11):hover .island-body__block:nth-child(10){
+.island-body__block:nth-child(11):hover + .island-body__block:nth-child(10){
 	visibility: visible;
 }
