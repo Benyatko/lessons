@@ -11,7 +11,6 @@ body{
 header{
 	padding: 50px 0px 100px 0px;
 	background: linear-gradient(0deg,rgba(253, 187, 45, 1) 0%, rgba(54, 188, 255, 0.94) 100%);
-
 }
 h1{
 	font-size: 164px;
@@ -37,6 +36,7 @@ h1{
 	padding: 15px 0 20px  0;
 }
 .example{
+	
 	width: 100px;
 	/* height: 100px; */
 	background-color: #696969;
@@ -419,7 +419,7 @@ h1{
 	width: 30px;
 	border-radius: 10px;
 }
-.ship-body__element:nth-child(20){
+.ship-body__element--end{
 	position: absolute;
 	background-color: #81616100;
 	top: 0px;
@@ -434,11 +434,11 @@ h1{
 .ship-body__block p:nth-child(2){
 	visibility: hidden;
 }
-.ship-body__element:nth-child(20):hover + 
+.ship-body__element--end:hover + 
 .ship-body__block p:first-child{
 	visibility: visible;
 } 
-.ship-body__element:nth-child(20):hover + 
+.ship-body__element--end:hover + 
 .ship-body__block p:nth-child(2){
 	visibility: visible;
 } 
@@ -512,13 +512,12 @@ h1{
 }
 .island-body__block:nth-child(7){
 	position: absolute;
-	width: 9px;
-	height: 20px;
-	background-color: #3a2e1f;
-	top: -20px;
-	left: 1201px;
-	border-radius: 48% 52% 34% 66% / 100% 100% 0% 0% ;
-	z-index: 2;
+	background-color: #bdbdbd00;
+	top: -200px;
+	left: 990px;
+	height:350px;
+	width: 360px;
+	z-index: 10;
 }
 .island-body__block:nth-child(8){
 	position: absolute;
@@ -551,20 +550,32 @@ h1{
 }
 .island-body__block:nth-child(11){
 	position: absolute;
-	background-color: #bdbdbd00;
-	top: -200px;
-	left: 990px;
-	height:350px;
-	width: 360px;
-	/* z-index: 10; */
+	width: 9px;
+	height: 20px;
+	background-color: #3a2e1f;
+	top: -20px;
+	left: 1201px;
+	border-radius: 48% 52% 34% 66% / 100% 100% 0% 0% ;
+	z-index: 2;
 }
-
 .island-body__block:nth-child(8),
 .island-body__block:nth-child(9),
 .island-body__block:nth-child(10){
 	visibility: hidden;
 }
 
-.island-body__block:nth-child(11):hover + .island-body__block:nth-child(10){
+.island-body__block:nth-child(7):hover + 
+.island-body__block:nth-child(8){
 	visibility: visible;
+}
+.island-body__block:nth-child(7):hover ~ 
+.island-body__block:nth-child(9){
+	visibility: visible;
+}
+.island-body__block:nth-child(7):hover ~ 
+.island-body__block:nth-child(10){
+	visibility: visible;
+}
+.island-body__block:nth-child(7):hover ~ .ship-body{
+	transform: rotate(20deg);
 }
