@@ -36,9 +36,7 @@ h1{
 	padding: 15px 0 20px  0;
 }
 .example{
-	
 	width: 100px;
-	/* height: 100px; */
 	background-color: #696969;
 	display: inline-block;
 	border-radius: 10px;
@@ -207,7 +205,12 @@ h1{
 	background-color: #2365ff;
 	padding: 100px 0 200px 0;
 }
-
+.warship h2{
+	font-size: 48px;
+	color: #fff;
+	font-weight: 700;
+	padding: 0px 0px 100px 0px;
+}
 .ship-body{
 	/* transform: rotate(30deg); */
 	position: relative;
@@ -575,7 +578,4 @@ h1{
 .island-body__block:nth-child(7):hover ~ 
 .island-body__block:nth-child(10){
 	visibility: visible;
-}
-.island-body__block:nth-child(7):hover ~ .ship-body{
-	transform: rotate(20deg);
 }
