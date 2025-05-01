@@ -24,18 +24,18 @@ h1{
 	color: #3c6bdb;
 }
 /*====================================================*/
-.examples {
+.example {
 	padding: 100px 0;
 	background: linear-gradient(0deg,rgba(35, 101, 255, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
-.examples h2{
+.example h2{
 	text-align: center;
 	font-size: 28px;
 	font-weight: 700;
 	color: #fff;
 	padding: 15px 0 20px  0;
 }
-.example{
+.examp{
 	width: 100px;
 	background-color: #696969;
 	display: inline-block;
@@ -422,7 +422,7 @@ h1{
 	width: 30px;
 	border-radius: 10px;
 }
-.ship-body__element--end{
+.ship-body__element:nth-child(20){
 	position: absolute;
 	background-color: #81616100;
 	top: 0px;
@@ -437,11 +437,11 @@ h1{
 .ship-body__block p:nth-child(2){
 	visibility: hidden;
 }
-.ship-body__element--end:hover + 
+.ship-body__element:nth-child(20):hover + 
 .ship-body__block p:first-child{
 	visibility: visible;
 } 
-.ship-body__element--end:hover + 
+.ship-body__element:nth-child(20):hover + 
 .ship-body__block p:nth-child(2){
 	visibility: visible;
 } 
