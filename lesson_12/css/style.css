@@ -44,6 +44,13 @@ nav a:hover{
 	padding: 150px 0px 400px 0px;
 	background-color: #3c6bdb;
 }
+.warship h2{
+	position: absolute;
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+	top: 52%;
+}
 @keyframes move {
 	0% {
 		left: -100%;
