@@ -44,19 +44,19 @@ nav a:hover{
 }
 @keyframes move {
 	0% {
-		left: -500px;
+		left: -100%;
 	}
 	50%{
-		left: 310px;
+		left: 20%;
 		transform: rotate(0deg);
 	}
 	70% {
-		left: 310px;
+		left: 20%;
 		top: 0;
 		transform: rotate(0deg);
 	}
 	100% {
-		left: 310px;
+		left: 20%;
 		top: 250px;	
 		transform: rotate(13deg);
 	}
@@ -167,7 +167,7 @@ nav a:hover{
 }
 @keyframes rocket {
 	0% {
-		left: 1800px;
+		right: -100%;
 		opacity: 0;
 	}
 	30% {
