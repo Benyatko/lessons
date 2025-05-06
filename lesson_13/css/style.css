@@ -78,7 +78,7 @@ h2 span{
 .cards__container{
 
 }
-.cards-body {
+.cards__body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
@@ -143,6 +143,11 @@ h2 span{
 	line-height: 1.2; /* 51/20 */
 	font-size: 20px;
 	gap: 15px;
+	transition: all 0.3s;
+}
+.california li:hover{
+	text-shadow: 0 0 30px #5c33a8;
+	color: #412672;
 }
 .california ul >:not(:last-child){
 	margin-bottom: 21px;
@@ -217,7 +222,7 @@ font-weight: 700;
 	gap: 10px;
 }
 
-.services__content {
+.item__content {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -225,12 +230,12 @@ font-weight: 700;
 	font-size: 15px;
 	text-align: center;
 }
-.services__content h3{
+.item__content h3{
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 1;
 }
-.services__content p{
+.item__content p{
 	line-height: 1.6; /* 24/15 */
 	white-space: nowrap;
 }
@@ -241,4 +246,10 @@ footer{
 	font-size: 22px;
 	font-weight: 700;
 	text-align: center;
+	transition: all 0.3s;
+}
+footer a:hover{
+	transition: all 0.3s;
+	text-shadow: 10px 0 30px #412672;
+	color: #000;
 }
