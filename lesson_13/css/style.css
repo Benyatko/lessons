@@ -1,3 +1,244 @@
 @import url('reset.css');
 @import url('fonts.css');
 
+body{
+	font-family: Inter;
+	font-size: 15px;
+	color: #4f4f4f;
+}	
+header{
+	position: relative;
+	padding: 150px 0px 150px 0px;
+	font-size: 64px;
+}
+.header *:nth-child(2){
+	font-size: 34px;
+	letter-spacing: 4px;
+}
+.header *:nth-child(1){
+	margin-bottom: 20px;
+}
+
+.header *:nth-child(3){
+	position: absolute;
+	font-size: 230px;
+	top: -40px;
+	font-weight: 700;
+	color: #0000000c;
+	z-index: 1;
+
+	animation-name: row;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+}
+@keyframes row{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.header *:nth-child(1),
+.header *:nth-child(2){
+	position: relative;
+	z-index: 2;
+}
+.wrapper{
+	max-width: 100%;
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+main{
+	flex-grow: 1;
+}
+[class*='__container']{
+	max-width: 1201px;
+	margin: 0 auto;
+}
+.cards h2{
+	color: #fff;
+	font-size: 38px;
+	max-width: 400px;
+	line-height: 1.2;
+	margin-bottom: 31px;
+}
+h2 span{
+	font-weight: 700;
+}
+.cards {
+	padding: 61px 0px 102px 0px;
+	background-color: #412672;
+}
+.cards__container{
+
+}
+.cards-body {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.card-item {
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 387px;
+}
+.card-content:hover{
+	transition: 0.3s;
+	background-color: #FFBE48;
+}
+.card-content {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.card-content >:not(:last-child){
+	margin-bottom: 16px;
+}
+.card-content >:nth-child(3){
+	flex-grow: 1;
+}
+.card-content p{
+	line-height: 1.26;
+	font-size: 15px;
+}
+.card-content h3{
+	font-size: 22px;
+	font-weight: 600;
+	color: #000;
+}
+.card-content a{
+	font-size: 15px;
+	color:#FE3F3F;
+	transition: all 0.3s;
+}
+.card-content a:hover{
+	text-decoration: underline;
+	font-weight: 700;
+	color: #fff;
+	transition: all 0.3s;
+}
+/*==============================================*/
+.california {
+	padding: 153px 0px 137px 0px;
+	line-height: 1.2;
+}
+.california h2{
+	color: #412672;
+	font-size: 34px;
+}
+.california p{
+	font-size: 22px;
+	color: #412672;
+}
+.california li{
+	display: flex;
+	line-height: 1.2; /* 51/20 */
+	font-size: 20px;
+	gap: 15px;
+}
+.california ul >:not(:last-child){
+	margin-bottom: 21px;
+}
+.california li::before{
+	content:'';
+	align-self: flex-start;
+	background: url('../img/california/icon/check.svg') 0 0 / 100% no-repeat;
+	flex: 0 0 auto;
+	width: 23px;
+	height: 23px;
+}
+.california__container {
+}
+.california__body {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.california__content >*:not(:last-child) {
+	margin-bottom: 20px;
+}
+.california__content{
+	/* display: flex;
+	flex-direction: column; */
+	flex-basis: 518px;
+
+	padding: 98px 0px 65px 0px;
+}
+.california__image {
+	margin-right: -172px;
+	max-width: 100%;
+}
+/*=========================================*/
+.services {
+	padding: 70px 0;
+	background-color: #412672;
+}
+.services h2{
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.services span{
+font-weight: 700;
+}
+.services__container {
+}
+.services__body {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	gap: 140px;
+}
+.services__item:nth-child(1) {
+	flex-basis: 171px;
+}
+.services__item:nth-child(2) {
+	flex-basis: 211px;
+}
+.services__item:nth-child(3) {
+	flex-basis: 206px;
+}
+.services__item:nth-child(4) {
+	flex-basis: 191px;
+}
+.item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.services__content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+}
+.services__content h3{
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1;
+}
+.services__content p{
+	line-height: 1.6; /* 24/15 */
+	white-space: nowrap;
+}
+/*=============================================*/
+
+footer{
+	padding: 30px;
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+}
