@@ -114,9 +114,6 @@ option {
 	flex-basis: 428px;
 }
 /*========================================================*/
-.checkbox{
-	display: row-revers;
-}
 .checkbox__input{
 	opacity: 0;
 	width: 0;
@@ -214,9 +211,6 @@ option {
 	border: 1px solid #e6e6e6;
 	border-radius: 6px;
 }
-.order-billing {
-
-}
 .order-billing__body {
 	padding: 24px;
 }
@@ -227,8 +221,6 @@ option {
 }
 .order-billing__summary >:nth-child(2) {
 	margin-bottom: 12px;
-}
-.order-billing__summary {
 }
 .summary-billing {
 	margin-bottom: 24px;
