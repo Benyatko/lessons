@@ -274,7 +274,10 @@ option {
 .summary-billing__price{
 	font-size: 14px;
 	font-weight: 500;
-	
+}
+#total{
+	font-weight: 600;
+	font-size: 18px;
 }
 .summary-billing__item{
 	display: flex;
@@ -312,3 +315,16 @@ button:hover{
 	transition: all 0.3s;
 }
 
+footer{
+	padding: 30px;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	transition: all 0.3s;
+	line-height: 4;
+}
+footer a:hover{
+	transition: all 0.3s;
+	text-shadow: 10px 0 30px #412672;
+	color: #000;
+}
