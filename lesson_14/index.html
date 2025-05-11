@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson 14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1>Homework</h1>
+				<h2>lesson #14</h2>
+				<h3>FORMS</h3>
+			</div>
+		</header>
+		<main class="page">
+			<section class="billing">
+				<div class="billing__container">
+					<form class="billing__form form-billing" method="post" action="#" enctype="multipart/form-data">
+						<h2>Billing Information</h2>
+						<div class="form-billing__user">
+							<div class="form-billing__name">
+								<label for="first-name">First name</label>
+								<input id="first-name" name="form[]" type="text" placeholder="Your first name">
+							</div>
+							<div class="form-billing__name">
+								<label for="last-name">Last name</label>
+								<input id="last-name" name="form[]" type="text" placeholder="Your last name">
+							</div>
+							<div class="form-billing__name">
+								<label for="company-name">Company Name <span>(optional)</span></label>
+								<input id="company-name" name="form[]" type="text" placeholder="Company name">
+							</div>
+							<div class="form-billing__adress">
+								<label for="street">Street Address</label>
+								<input id="street" name="form[]" type="text" placeholder="Your Address">
+							</div>
+						</div>
+						<div class="form-billing__location location-billing">
+							<div class="location-billing__region">
+								<label for="state">Country / Region</label>
+								<select required name="form[]" id="state" class="form-billing__region">
+									<option value="" disabled selected>select</option>
+									<option value="1">USA</option>
+									<option value="2">Canada</option>
+									<option value="3">Mexico</option>
+								</select>
+							</div>
+							<div class="location-billing__states">
+								<label for="state">Country / Region</label>
+								<select required name="form[]" id="state" class="form-billing__region">
+									<option value="" disabled selected>select</option>
+									<option value="1">California</option>
+									<option value="2">Texas</option>
+									<option value="3">Ohaio</option>
+								</select>
+							</div>
+							<div class="location-billing__zip">
+								<label for="zip">Zip Code</label>
+								<input id="zip" name="form[]" type="text" placeholder="Zip Code">
+							</div>
+							<div class="location-billing__email">
+								<label for="street">Email</label>
+								<input id="street" name="form[]" type="email" placeholder="Email">
+							</div>
+							<div class="location-billing__phone">
+								<label for="street">Street Address</label>
+								<input id="street" name="form[]" type="text" placeholder="Your Address">
+							</div>
+						</div>
+						<div class="form-billing__ship">
+							<label class="checkbox">
+								<input id="check-ship" value="0" name="form[]" type="checkbox" class="checkbox__input">
+								<span class="checkbox__label">Ship to a different address</span>
+							</label>
+						</div>
+						<div class="form-billing__notes">
+							<h2>Additional Info</h2>
+							<label for="notes"></label>
+							<textarea name="form[]" id="notes"
+								placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+						</div>
+					</form>
+					<form class="billing__order order-billing" action="#" method="post" enctype="multipart/form-data">
+						<div class="order-billing__card">
+							<div class="order-billing__body">
+								<h3>Order Summery</h3>
+								<div class="order-billing__summary summary-billing">
+									<div class="summary-billing__items">
+										<img src="img/green-capsicum.avif" alt="Image">
+										<div class="summary-billing__item">Green Capsicum x5</div>
+										<div class="summary-billing__price">$70.00</div>
+									</div>
+									<div class="summary-billing__items">
+										<img src="img/red-capsicum.avif" alt="Image">
+										<div class="summary-billing__item">Red Capsicum x1</div>
+										<div class="summary-billing__price">$14.00</div>
+									</div>
+									<div class="summary-billing__items">
+										<div class="summary-billing__item"><span>Subtotal:</span></div>
+										<div class="summary-billing__price">$84.00</div>
+									</div>
+									<div class="summary-billing__items">
+										<div class="summary-billing__item"><span>Shipping:</span></div>
+										<div class="summary-billing__price">Free</div>
+									</div>
+									<div class="summary-billing__items">
+										<div class="summary-billing__item"><span>Total:</span></div>
+										<div class="summary-billing__price">$84.00</div>
+									</div>
+								</div>
+								<h3>Payment Method</h3>
+								<div class="order-billing__payment">
+										<label class="options">
+											<input id="check-ship" value="0" name="form[]" type="radio" class="options__input">
+											<span class="options__label">Cash on Delivery</span>
+										</label>
+										<label class="options">
+											<input id="check-ship" value="0" name="form[]" type="radio" class="options__input">
+											<span class="options__label">Paypal</span>
+										</label>
+										<label class="options">
+											<input id="check-ship" value="0" name="form[]" type="radio" class="options__input">
+											<span class="options__label">Amazon Pay</span>
+										</label>
+								</div>
+								<button class="order-billing__button" type="submit">Place Order</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="#">go up ^</a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
