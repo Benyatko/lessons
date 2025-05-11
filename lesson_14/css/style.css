@@ -100,7 +100,7 @@ input:focus::placeholder{
 input,
 select{
 	height: 49px;
-	border: 1px solid #999999;
+	border: 1px solid #e6e6e6;
 	border-radius: 6px;
 	padding: 0 16px;
 	font-size: 16px;
@@ -156,7 +156,7 @@ option {
 /*========================================================*/
 .form-billing__notes h2{
 	padding-top: 32px;
-	border-top: 1px solid #999999;
+	border-top: 1px solid #e6e6e6;
 }
 .checkbox{
 	margin-bottom: 32px;
