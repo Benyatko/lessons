@@ -154,6 +154,13 @@ option {
 	flex-basis: 428px;
 }
 /*========================================================*/
+.form-billing__notes h2{
+	padding-top: 32px;
+	border-top: 1px solid #999999;
+}
+.checkbox{
+	margin-bottom: 32px;
+}
 .checkbox__input{
 	opacity: 0;
 	width: 0;
