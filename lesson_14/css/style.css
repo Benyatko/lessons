@@ -99,11 +99,15 @@ input:focus::placeholder{
 }
 input,
 select{
+	outline: 0;
 	height: 49px;
 	border: 1px solid #e6e6e6;
 	border-radius: 6px;
 	padding: 0 16px;
 	font-size: 16px;
+}
+input:focus{
+	border: 1px solid #00B207;
 }
 select{
 	appearance: none;
@@ -184,6 +188,10 @@ option {
 	background-color: transparent;
 	transition: all 0.4s;
 }
+.checkbox__label:hover::before{
+	content:'';
+	border: 1px solid #00B207;
+}
 .checkbox__input:checked + .checkbox__label::before{
 	content: '';
 	border: none;
@@ -222,6 +230,10 @@ option {
 	background-color: transparent;
 	transition: all 0.4s;
 }
+.options__label:hover:before{
+	content:'';
+	border: 1px solid #00B207;
+}
 .options__input:checked + .options__label::before{
 	content: '';
 	border: none;
@@ -242,12 +254,16 @@ option {
 }
 /*===================================================================*/
 .form-billing__notes textarea{
+	outline: 0;
 	padding: 14px 16px;
 	resize: vertical;
-	border: 1px solid #999999;
+	border: 1px solid #e6e6e6;
 	border-radius: 6px;
 	max-width: 872px;
 	line-height: 1.2;
+}
+.form-billing__notes textarea:focus{
+	border: 1px solid #00B207;
 }
 /*================order form=====================*/
 .billing__order {
@@ -318,7 +334,7 @@ button{
 	transition: all 0.3s;
 }
 button:hover{
-	background-color: #135415;
+	background-color: #2C742F;
 	transition: all 0.3s;
 }
 
