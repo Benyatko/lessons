@@ -23,8 +23,8 @@ nav{
 	font-weight: 500;
 	text-align: center;
 }
-nav :nth-child(n + 2){
-	margin-left: 70px;
+nav a:not(:last-child){
+	margin-right: 70px;
 }
 nav a:hover{
 	text-decoration: underline;
@@ -67,7 +67,6 @@ h1{
 	position: relative;
 	max-width: 602px;
 	padding-top: 97px;
-	margin-left: 70px;
 }
 .content-business {
 }
@@ -95,6 +94,8 @@ h1{
 	/* z-index: 2; */
 	border-radius: 20px;
 	box-shadow: -25px 20px 44px 0px rgba(84, 48, 209, 0.40);
+	margin-right: 70px;
+
 }
 .content-business__title {
 	font-family: 'CircularStd';

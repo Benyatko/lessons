@@ -64,7 +64,6 @@ main{
 .cards h2{
 	color: #fff;
 	font-size: 38px;
-	max-width: 400px;
 	line-height: 1.2;
 	margin-bottom: 31px;
 }
@@ -85,41 +84,40 @@ h2 span{
 }
 .card-item {
 	display: flex;
-	justify-content: space-between;
-	flex-basis: 387px;
-}
-.card-content:hover{
-	transition: 0.3s;
-	background-color: #FFBE48;
-}
-.card-content {
-	display: flex;
 	flex-direction: column;
+	gap: 16px;
 	padding: 20px;
 	background-color: #fff;
 	transition: 0.3s;
+	max-width: 387px;
+	width: 100%;
 }
-.card-content >:not(:last-child){
-	margin-bottom: 16px;
+.card-item img{
+	max-width: 347px;
 }
-.card-content >:nth-child(3){
+.card-item:hover{
+	transition: 0.3s;
+	background-color: #FFBE48;
+}
+.card-item >:nth-child(3){
 	flex-grow: 1;
 }
-.card-content p{
+.card-item p{
 	line-height: 1.26;
 	font-size: 15px;
 }
-.card-content h3{
+.card-item h3{
 	font-size: 22px;
 	font-weight: 600;
 	color: #000;
 }
-.card-content a{
+.card-item a{
+	align-self: flex-start;
 	font-size: 15px;
 	color:#FE3F3F;
 	transition: all 0.3s;
 }
-.card-content a:hover{
+.card-item a:hover{
 	text-decoration: underline;
 	font-weight: 700;
 	color: #fff;
@@ -166,6 +164,7 @@ h2 span{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	gap: 30px;
 }
 .california__content >*:not(:last-child) {
 	margin-bottom: 20px;
@@ -174,7 +173,6 @@ h2 span{
 	/* display: flex;
 	flex-direction: column; */
 	flex-basis: 518px;
-
 	padding: 98px 0px 65px 0px;
 }
 .california__image {
@@ -202,7 +200,7 @@ font-weight: 700;
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-	gap: 140px;
+	gap: 30px;
 }
 .services__item:nth-child(1) {
 	flex-basis: 171px;
