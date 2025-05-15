@@ -109,9 +109,13 @@ input:focus{
 	border: 1px solid #00B207;
 }
 select{
+	outline: none;
 	appearance: none;
 	background: url('../img/arrow-down.svg') right no-repeat;
 	background-position: calc(100% - 16px);
+}
+select:focus{
+	border: 1px solid #00B207;
 }
 
 label{
@@ -211,6 +215,9 @@ option {
 	height: 0;
 	width: auto;
 }
+.options__input:focus-visible + .options__label{
+	outline: 1px solid #00B207;
+}
 .options__label{
 	display: inline-flex;
 	align-items: center;
@@ -218,6 +225,7 @@ option {
 	gap: 6px;
 	line-height: 1.5;
 }
+
 .options__label::before{
 	content:'';
 	position: relative;
@@ -233,6 +241,7 @@ option {
 	content:'';
 	border: 1px solid #00B207;
 }
+
 .options__input:checked + .options__label::before{
 	content: '';
 	border: none;
@@ -260,6 +269,7 @@ option {
 	border-radius: 6px;
 	max-width: 872px;
 	line-height: 1.2;
+	min-height: 100px;
 }
 .form-billing__notes textarea:focus{
 	border: 1px solid #00B207;
@@ -307,6 +317,9 @@ option {
 	flex-grow: 1;
 	gap: 6px;
 	font-size: 14px;
+}
+.summary-billing a:focus{
+	outline: 1px solid #00B207;
 }
 .summary-billing__item span{
 	color: #4d4d4d;
