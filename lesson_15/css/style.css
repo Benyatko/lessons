@@ -45,23 +45,59 @@ header h3{
 	opacity: 0;
 
 	animation-name: form;
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
+	animation-duration: 15s;
+	animation-iteration-count:inherit;
+	animation-fill-mode: forwards;
 }
 
 /* @keyframes form {
 	0%{
 		opacity: 0;
 		left: 0;
+		letter-spacing: normal;
 	}
 	50%{	
 		transform: scale(1);
 		opacity: 0.8;
-		left: 67%;
+		left: 30%;
+		letter-spacing: normal;
+	}
+	70%{
+		transform: scale(1);
+		opacity: 0.8;
+		left: 30%;
+		letter-spacing: 20px;
+	}
+	80%{
+		transform: scale(1);
+		opacity: 0.8;
+		left: 30%;
+		letter-spacing: -20px;
 	}
 	100%{
 		transform: scale(2.5);
-		opacity: 0;
-		left: 0;
+		opacity: 0.05;
+		left: 25%;
 	}
 } */
+/*==============================================*/
+
+
+
+
+
+/*==============================================*/
+
+footer{
+	padding: 30px;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	transition: all 0.3s;
+	line-height: 4;
+}
+footer a:hover{
+	transition: all 0.3s;
+	text-shadow: 10px 0 30px #412672;
+	color: #000;
+}

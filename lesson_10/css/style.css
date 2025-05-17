@@ -67,6 +67,11 @@ h1{
 	position: relative;
 	max-width: 602px;
 	padding-top: 97px;
+	margin-right: 258px;
+	text-align: left;
+}
+.body-bussiness__top{
+	text-align: right;
 }
 .content-business {
 }
@@ -78,7 +83,6 @@ h1{
 .top-business__image{
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 128px;
 	max-width: 100%;
 	position: relative;
 	top: -41px;
@@ -87,7 +91,7 @@ h1{
 	content: url('../img/business/decor/decor01.svg');
 	position: absolute;
 	top: 168px;
-	left: -127px;
+	left: -28%;
 }
 .top-business__image img{
 	position: relative;
@@ -124,6 +128,7 @@ h1{
 	background-color:#5e3520;
 }
 .body-bussiness__bottom {
+	text-align: right;
 }
 .bottom-business {
 }
@@ -135,25 +140,27 @@ h1{
 	content: url('../img/business/decor/decor02.svg');
 	position: absolute;
 	bottom: 144px;
-	left: 141px;
+	left: 26%;
 }
 .bottom-business__image::after{
 	content: url('../img/business/decor/ellipse.svg');
 	position: absolute;
 	bottom: 531px;
-	left: 152px;
+	left: 17%;
 }
 .bottom-business__image img{
 	position: relative;
 	border-radius: 20px;
 	margin-top: -155px;
-	margin-left: 43px;
+	text-align: right;
 	box-shadow: 22px 42px 44px 0px rgba(0, 0, 0, 0.30);
+	margin-right: 131px;
 }
 .bottom-business__content {
 	display: inline-block;
 	padding-top: 137px;
-	margin-left: 378px;
+	text-align: left;
+	margin-right: 43px;
 }
 /*===========================eco===================================*/
 .eco a {
