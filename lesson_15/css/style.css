@@ -216,9 +216,6 @@ h2{
 	.title{
 		margin-bottom: 20px;
 	}
-	.card-eco__image img{
-		max-height: 250px;
-	}
 }
 @media (max-width: 390px){
 	header {
