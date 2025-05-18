@@ -63,7 +63,6 @@ header h3{
 		font-size: 48px;
 	}
 }
-
 @keyframes form {
 	0%{
 		opacity: 0;
@@ -241,7 +240,6 @@ h2{
 		margin-bottom: 10px;
 	}
 }
-
 .title a{
 	font-weight: 500;
 	line-height: 1.5;
@@ -250,7 +248,6 @@ h2{
 	margin-right: 12px;
 	transition: all 0.3s;
 }
-
 .title a:hover{
 	text-shadow: 10px 0 35px #00ba06;
 	transform: scale(1.05);
@@ -589,8 +586,6 @@ svg{
 	transform: scale(1.03);
 	transition: all 0.3s;
 }
-
-
 /*==============================================*/
 footer{
 	padding: 30px;
