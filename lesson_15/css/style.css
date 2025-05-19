@@ -618,14 +618,14 @@ footer a:hover{
 	}
 }
 @media (any-hover: hover) {
-	.card-eco:hover .card-eco__buttons {
-	  opacity: 1;
-	  visibility: visible;
+	.products:hover .card-eco__buttons {
+		opacity: 1;
+		visibility: visible;
 	}
- }
+}
 @media (any-hover: none) {
 	.card-eco__buttons {
-	  opacity: 1;
-	  visibility: visible;
+		opacity: 1;
+		visibility: visible;
 	}
- }
+}
