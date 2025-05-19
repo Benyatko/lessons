@@ -438,6 +438,8 @@ svg{
 	aspect-ratio: 424 / 324;
 }
 .news__card {
+	display: flex;
+	flex-direction: column;
 	flex: 0 1 424px;
 	border-radius: 8px;
 	overflow: hidden;
@@ -487,15 +489,20 @@ svg{
 	text-transform: uppercase;
 }
 .news__content {
+	display: flex;
+	flex-direction: column;
 	padding: 24px;
+	width: 100%;
+	flex-grow: 1;
 }
 .news__content p{
+	display: flex;
+	flex-grow: 1;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.5;
 	transition: color 0.3s;
 }
-
 @media (max-width: 496px){
 	.news__content p{
 		font-size: 14px;
@@ -554,7 +561,7 @@ svg{
 .news__read-more {
 	font-weight: 600;
 	line-height: 1.2;
-	align-self: center;
+	align-self: flex-start;
 	color: #00B207;
 	transition: all 0.3s;
 }
@@ -583,6 +590,7 @@ svg{
 	transform: scale(1.03);
 	transition: all 0.3s;
 }
+
 /*==============================================*/
 footer{
 	padding: 30px;
@@ -609,3 +617,15 @@ footer a:hover{
 		padding: 0;
 	}
 }
+@media (any-hover: hover) {
+	.card-eco:hover .card-eco__buttons {
+	  opacity: 1;
+	  visibility: visible;
+	}
+ }
+@media (any-hover: none) {
+	.card-eco__buttons {
+	  opacity: 1;
+	  visibility: visible;
+	}
+ }
