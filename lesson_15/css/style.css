@@ -397,6 +397,11 @@ svg{
 	transition: all 0.3s;
 	}
 }
+@media (any-hover: none) {
+	.card-eco__buttons a{
+		visibility: visible;
+	}
+} 
 .card-eco__buttons a:hover{
 	background-color: #00B207;
 	border-color: #00B207;
@@ -624,9 +629,3 @@ footer a:hover{
 		visibility: visible;
 	}
 }
-@media (any-hover: none) {
-	.card-eco__buttons{
-		opacity: 1;
-		visibility: visible;
-	}
-} */
