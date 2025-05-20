@@ -618,13 +618,13 @@ footer a:hover{
 	}
 }
 @media (any-hover: hover) {
-	.products:hover .card-eco__buttons {
+	.products:hover .card-eco__buttons{
 		opacity: 1;
 		visibility: visible;
 	}
 }
 @media (any-hover: none) {
-	.card-eco__buttons {
+	.card-eco__buttons{
 		opacity: 1;
 		visibility: visible;
 	}
