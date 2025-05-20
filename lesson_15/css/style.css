@@ -390,12 +390,13 @@ svg{
 	background-color: #fff;
 	visibility: hidden;
 }
+@media (any-hover:hover){
 .card-eco:hover 
 .card-eco__buttons a{
 	visibility: visible;
 	transition: all 0.3s;
+	}
 }
-
 .card-eco__buttons a:hover{
 	background-color: #00B207;
 	border-color: #00B207;
@@ -617,8 +618,8 @@ footer a:hover{
 		padding: 0;
 	}
 }
-@media (any-hover: hover) {
-	.products:hover .card-eco__buttons{
+/* @media (any-hover: hover) {
+	.products:hover .card-eco__buttons {
 		opacity: 1;
 		visibility: visible;
 	}
@@ -628,4 +629,4 @@ footer a:hover{
 		opacity: 1;
 		visibility: visible;
 	}
-}
+} */
