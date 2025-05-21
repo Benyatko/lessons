@@ -385,20 +385,19 @@ svg{
 	stroke: #fff;
 	transition: all 0.3s;
 }
-.card-eco__buttons a:nth-child(1),
-.card-eco__buttons a:nth-child(2){
+.card-eco__buttons{
 	background-color: #fff;
 	visibility: hidden;
 }
 @media (any-hover:hover){
 .card-eco:hover 
-.card-eco__buttons a{
+.card-eco__buttons{
 	visibility: visible;
 	transition: all 0.3s;
 	}
 }
 @media (any-hover: none) {
-	.card-eco__buttons a{
+	.card-eco__buttons{
 		visibility: visible;
 	}
 } 
