@@ -1,0 +1,48 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+body{
+	font-family: Poppins;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+	max-width: 100%;
+}
+main{
+flex-grow: 1;
+}
+[class*="__container"]{
+	max-width: 1350px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/*==============================================*/
+footer{
+	padding: 30px;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+	transition: all 0.3s;
+	line-height: 4;
+}
+footer a:hover{
+	transition: all 0.3s;
+	text-shadow: 10px 0 30px #412672;
+	color: #000;
+}
+@media (max-width: 768px){
+	footer{
+		font-size: 18px;
+		padding: 10px;
+	}
+}
+@media (max-width: 496px){
+	footer{
+		font-size: 16px;
+		padding: 0;
+	}
+}
+
