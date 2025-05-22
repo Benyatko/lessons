@@ -156,7 +156,6 @@ flex-grow: 1;
 		background-color: #000000;
 		left: 0;
 		border-radius: 50%;
-
 	}
 	.header__icon-menu::before{
 		top: 0;
@@ -179,6 +178,22 @@ flex-grow: 1;
 		z-index: 3;
 		background-color: #fff;
 		padding: 100px 15px 30px 15px;
+		transition: all 0.3s;
+	}
+	/* .header__menu-body::before{
+		content: '';
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		z-index: 3;
+		height: 100px;
+		transition: all 0.3s;
+		background-color: #fff;
+	} */
+	.menu-open .header__menu-body{
+		opacity: 1;
+		visibility: visible;
 	}
 	.header__list{
 		align-items: stretch;
@@ -192,6 +207,9 @@ flex-grow: 1;
 @media (max-width: 485px){
 	.logo-header__text{
 		display: none;
+	}
+	.header{
+		padding: 5px 0;
 	}
 }
 
