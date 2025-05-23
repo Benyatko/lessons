@@ -201,6 +201,9 @@ flex-grow: 1;
 		transition: all 0.3s;
 		background-color: #fff;
 	}
+	body.menu-open{
+		overflow: hidden;
+	}
 	.menu-open .header__menu-body{
 		opacity: 1;
 		visibility: visible;
