@@ -22,7 +22,7 @@ flex-grow: 1;
 /*==============================================*/
 .header {
 	padding: 28px 0px 25px 0px;
-	background: rgba(255, 255, 255, 0.60);
+	background: rgba(255, 255, 255, 0.90);
 	position: fixed;
 	top: 0;left: 0;
 	z-index: 4;
@@ -55,7 +55,7 @@ flex-grow: 1;
 }
 @media (any-hover:hover){
 .logo-header:hover .logo-header__text{
-	color: #fff;
+	color: #0000006b;
 	transition: color 0.3s;
 	}
 }
