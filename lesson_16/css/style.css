@@ -51,12 +51,17 @@ flex-grow: 1;
 	/* position: relative; */
 	z-index: 5;
 	flex-shrink: 0;
+	transition: color 0.3s;
+}
+@media (any-hover:hover){
+.logo-header:hover .logo-header__text{
+	color: #fff;
+	transition: color 0.3s;
+	}
+}
+.header__logo{
 }
 
-.header__logo:hover{
-}
-.logo-header {
-}
 .logo-header__icon {
 }
 .logo-header__text {
@@ -64,6 +69,7 @@ flex-grow: 1;
 	font-weight: 700;
 	line-height: 1.5;
 	text-transform: uppercase;
+	transition: color 0.3s;
 }
 @media (max-width: 980px){
 	.logo-header__text{
