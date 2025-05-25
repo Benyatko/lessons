@@ -374,13 +374,16 @@ h2{
 	border: 1px solid #E6E6E6;
 }
 .card-eco__basket-button{
-	position: absolute;
+	position: relative;
 	text-align: center;
 	height: 40px;
 	width: 40px;
-	right: 20px;
-	bottom: 28px;
 	border-radius: 50%;
+}
+.card-eco__price{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .card-eco__buttons{
 	position: absolute;
