@@ -290,8 +290,8 @@ h2{
 	object-fit: contain;
 }
 .card-eco__image{
-	
 	aspect-ratio: 264 / 240;
+	width: 100%;
 }
 .card-eco__info span{
 	color: #999;
