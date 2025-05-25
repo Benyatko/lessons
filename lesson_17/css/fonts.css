@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'kopubbatang';
+	src: url('../fonts/kopubbatang-light.woff') format('woff');
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'kopubbatang';
+	src: url('../fonts/kopubbatang-regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
