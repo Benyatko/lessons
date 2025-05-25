@@ -293,7 +293,7 @@ h2{
 	aspect-ratio: 264 / 240;
 	width: 100%;
 }
-.card-eco__info span{
+.old{
 	color: #999;
 	text-decoration: line-through;
 	font-weight: 400;
@@ -305,20 +305,27 @@ h2{
 	color: #4D4D4D;
 }
 .card-eco__sale{
-	position: absolute;
 	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 4%;
+}
+.card-eco__sale p{
+	gap:4px;
 	padding: 3px 8px;
-	gap: 4px;
 	background-color: #EA4B48;
 	border-radius: 4px;
 	color: #fff;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.5;
-	top: 16px;
-	left: 16px;
+	top: 0;
+	left: 0;
 }
-.card-eco__sale p:nth-child(2){
+.card-eco__sale p:not(:last-child){
+	margin-bottom: 3px;
+}
+.card-eco__sale >p span{
 	font-weight: 500;
 }
 .card-eco__image img {
