@@ -311,6 +311,7 @@ h2{
 	top: 4%;
 }
 .card-eco__sale p{
+	width: fit-content;
 	gap:4px;
 	padding: 3px 8px;
 	background-color: #EA4B48;
@@ -469,12 +470,15 @@ svg{
 .news__image {
 	position: relative;
 	overflow: clip;
+	aspect-ratio: 424 / 324;
+	width: 100%;
+	background-color: #666;
 }
 .news__image img{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	aspect-ratio: 424 / 324;
+
 }
 .news__card {
 	display: flex;
