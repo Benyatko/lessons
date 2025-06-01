@@ -591,7 +591,7 @@ margin-bottom: 6px;
 	visibility: hidden;
 }
 
-@media (any-hover: none){
+@media (any-hover:hover){
 .bottom-ecobazar__block{
 	visibility: visible;
 }
