@@ -552,10 +552,10 @@ svg{
 		visibility: hidden;
 	}
 }
-
+@meadia(any-hover:hover){
 .bottom-ecobazar__item:hover .bottom-ecobazar__info >:nth-child(1){
 	color: #2C742F;
-}
+}}
 .bottom-ecobazar__image img{
 	width: 100%;
 	height: 100%;
@@ -631,6 +631,7 @@ margin-bottom: 6px;
 	border-color: #00B207;
 	transition: all 0.3s;
 }
+@media(any-hover:hover){
 .bottom-ecobazar__item:hover {
 	box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
 	border-color: #2C742F;
@@ -653,7 +654,7 @@ margin-bottom: 6px;
 .bottom-ecobazar__block a:hover:nth-child(1){
 	background-color: #2C742F;
 	transition: all 0.3s;
-}
+}}
 .bottom-ecobazar__image-sale img{
 	width: 100%;
 	height: 100%;
