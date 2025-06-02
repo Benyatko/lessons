@@ -548,11 +548,9 @@ svg{
 }
 .bottom-ecobazar__item:hover .bottom-ecobazar__info >:nth-child(n + 2){
 	visibility: hidden;
-
 }
 .bottom-ecobazar__item:hover .bottom-ecobazar__info >:nth-child(1){
 	color: #2C742F;
-
 }
 .bottom-ecobazar__image img{
 	width: 100%;
@@ -932,6 +930,9 @@ footer a:hover{
 	}
 }
 @media (max-width: 480px){
+	.bottom-ecobazar__item:hover .bottom-ecobazar__info >:nth-child(n + 2){
+		visibility: visible;
+	}
 	.bottom-ecobazar__block{
 		visibility: visible;
 	}
@@ -939,12 +940,13 @@ footer a:hover{
 		position: absolute;
 		display: flex;
 		flex-direction: column-reverse;
+		justify-self: stretch;
 		align-items: end;
 		flex: 0 1 auto;
 		top: 50%;
 		transform: translateY(-50%);
 		right: 10%;
-		gap: 5px;
+		gap: 7px;
 	}
 	.bottom-ecobazar__bag{
 		position: relative;
