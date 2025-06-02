@@ -13,7 +13,11 @@ body{
 	max-width: 100%;
 }
 main{
-flex-grow: 1;
+flex-grow: 1;	
+}
+.page{
+	overflow-y: scroll;
+scroll-behavior: smooth;
 }
 [class*="__container"]{
 	max-width: 1230px;
@@ -51,6 +55,7 @@ nav a{
 	font-weight: 500;
 	transition: all 0.3s;
 }
+
 @media(any-hover:hover){
 nav a:hover{
 	text-shadow: 0 0 30px #000;
