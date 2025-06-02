@@ -482,10 +482,10 @@ svg{
 	background-color: #2C742F;
 	stroke: #fff;
 	transition: all 0.3s;
-}}
+}
 .card-eco__buttons{
 	visibility: hidden;
-}
+}}
 @media (any-hover:hover){
 .card-eco:hover 
 .card-eco__buttons{
