@@ -64,7 +64,7 @@ nav a:hover{
 .blossomia__body{
 	display: grid;
 	grid-template-columns: minmax(300px, 401px) minmax(250px, 370px) minmax(250px, 370px);
-	grid-template-rows: minmax(100px, 230px);
+	grid-template-rows: minmax(100px, 240px);
 	justify-items: start;
 	justify-content: space-between;
 	align-items: start;
@@ -75,19 +75,18 @@ nav a:hover{
 	flex-direction: column;
 	width: 100%;
 }
-.blossomia__card{
-	display: block;
+.blossomia__image{
 	position: relative;
 	overflow: clip;
 	max-width: 100%;
 	max-height: 100%;
 }
-.blossomia__item .blossomia__card img{
+.blossomia__image img{
 	aspect-ratio: 401 / 427;
 	object-fit: cover;
 	transition: transform 0.3s;
 }
-.blossomia__item--less .blossomia__card img{
+.blossomia__item--less .blossomia__image img{
 	aspect-ratio: 370 / 378;
 	object-fit: cover;
 }
@@ -208,7 +207,7 @@ nav a:hover{
 	border-color: #fff;
 	transition: all 0.3s;
 	}
-	.blossomia__item:hover .blossomia__card img{
+	.blossomia__item:hover .blossomia__image img{
 		transform: scale(1.02);
 		transition: transform 0.3s;
 	}
@@ -493,10 +492,7 @@ svg{
 	transition: all 0.3s;
 	}
 }
-@media (any-hover: none) {
-	.card-eco__buttons{
-		visibility: visible;
-	}
+@media (any-hover:hover) {
 	.card-eco__buttons a:hover{
 		background-color: #00B207;
 		border-color: #00B207;
@@ -757,17 +753,32 @@ footer a:hover{
 	}
 }
 @media (max-width: 960px){
+	.blossomia h3{
+		font-size: 18px;
+	}
+	.blossomia__price{
+		font-size: 16px;
+	}
+	.header{
+		padding: 50px 0;
+	}
+	.blossomia{
+		padding: 50px 0;
+	}
+	.ecobazar{
+		padding: 50px 0;
+	}
 	.blossomia__body{
 		grid-template-columns:minmax(220px, 370px) minmax(220px, 370px);
 		grid-template-rows: repeat(5, auto);
 		justify-content: space-around;
-		align-items: start;
+		/* align-items: start; */
 		gap: 10px;
 	}
-	.blossomia__item .blossomia__card img{
+	.blossomia__item .blossomia__image img{
 		width: 100%;
 	}
-	.blossomia__item--less .blossomia__card img{
+	.blossomia__item--less .blossomia__image img{
 		aspect-ratio: 401 / 427;
 		width: 100%;
 	}
@@ -784,7 +795,6 @@ footer a:hover{
 	.blossomia__body >:nth-child(3){
 		grid-column: 2 / 2;
 		grid-row: 2 / 4;
-		font-size: 36px;
 		padding: 0;
 	}
 	.blossomia__body >:nth-child(4){
@@ -832,21 +842,29 @@ footer a:hover{
 	}
 }
 @media (max-width: 767.98px){
+	.blossomia h3{
+		font-size: 16px;
+	}
+	.blossomia__price{
+		font-size: 14px;
+	}
 	.header{
-		padding: 50px 0;
+		padding: 30px 0;
 	}
 	.blossomia{
-		padding: 50px 0;
+		padding: 30px 0;
 	}
 	.ecobazar{
-		padding: 50px 0;
+		padding: 30px 0;
 	}
 	footer{
 		font-size: 18px;
 		padding: 10px;
 	}
+	
 }
-@media (max-width: 560px){
+
+@media (max-width: 556px){
 	.bottom-ecobazar__items {
 		grid-template-columns: 1fr;
 		justify-items: center;
@@ -861,14 +879,41 @@ footer a:hover{
 @media (max-width: 556px){
 	.ecobazar__top{
 		display: grid;
-		grid-template-columns: repeat(auto-fill, min(370px, 100%));
+		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
 		justify-content: space-around;
 		gap: 20px;
 		padding-bottom: 20px;
 	}
+	.button-eco{
+		top: 5%;
+		right: 4%;
+		flex-direction: row;
+		justify-content: flex-end;
+		column-gap: 10px;
+		width: 100%;
+	}
 	.card-eco {
+		display: flex;
+		align-items: center;
 		max-height: 360px;
+	}
+	.card-eco__title a{
+		font-size: 14px;
+		line-height: 1.2;
+	}
+	.card-eco__rating{
+		max-height: 13px;
+	}
+	.card-eco__content{
+		padding-left: 5px;
+	}
+	.card-eco image img{
+		width: 100%;
+		height: 100%;
+	}
+	.card-eco__basket-button{
+		right: 4%;
 	}
 	.ecobazar__title h2{
 		font-size: 28px;
@@ -888,13 +933,13 @@ footer a:hover{
 }
 @media (max-width: 480px){
 	.header{
-		padding: 30px 0;
+		padding: 20px 0;
 	}
 	.blossomia{
-		padding: 30px 0;
+		padding: 20px 0;
 	}
 	.ecobazar{
-		padding: 30px 0;
+		padding: 20px 0;
 	}
 	.blossomia__body{
 		display: grid;
