@@ -497,7 +497,7 @@ svg{
 @media (any-hover:hover) {
 	.card-eco__buttons a:hover{
 		background-color: #00B207;
-		border-color: #00B207;
+		border-color: #00B208;
 		transition: all 0.3s;
 	}
 	.card-eco__buttons a:hover path{
@@ -629,7 +629,7 @@ margin-bottom: 6px;
 .bottom-ecobazar__wish:hover,
 .bottom-ecobazar__view:hover{
 	background-color: #00B207;
-	border-color: #00B207;
+	border-color: #00B208;
 	transition: all 0.3s;
 }
 @media(any-hover:hover){
