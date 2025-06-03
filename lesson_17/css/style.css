@@ -553,7 +553,7 @@ svg{
 		visibility: hidden;
 	}
 }
-@meadia(any-hover:hover){
+@media (any-hover:hover){
 .bottom-ecobazar__item:hover .bottom-ecobazar__info >:nth-child(1){
 	color: #2C742F;
 }}
