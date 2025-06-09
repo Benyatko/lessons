@@ -1,0 +1,516 @@
+@import url('reset.css');
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	background-color: #393d3c;
+	font-size: 0.875rem;
+}
+.wrapper{
+	overflow: clip;
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper >main{
+	flex-grow: 1;
+}
+[class*='__container']{
+	max-width: 91.87em;
+	padding: 0 0.9375rem;
+	margin: 0 auto;
+}
+[class*='--margin']{
+	margin-bottom: 20px;
+}
+.page{
+	padding: 3.125rem 0;
+}
+.header{
+	padding-block: 2rem;
+}
+.header h1{
+	font-size: 3rem;
+}
+.header h2{
+	font-size: 2rem;
+}
+/*
+Відносні одиниці %
+
+Ш Б Е - ширина батьківського елемента
+В Б Е - висота батьківського елемента
+*/
+
+	/*Від - Ш Б Е*/
+	.test--margin{
+	/* /* width: 20%; */
+	max-width: 25%;
+	/*min-width: 20%;
+	inline-size: 20%;
+	min-inline-size: 20%;
+	max-inline-size: 20%;*/
+	padding: 1%;
+	/*padding-inline: 20%;
+	padding-block: 20%;
+	margin: 20%;
+	margin-inline: 20%;
+	margin-block: 20%;*/
+	position: relative;
+	left: 2%;
+	/*right: 50%;
+	inset-inline: 50%;  */
+	background-color: #248f00;
+	border-radius: 1rem;
+}
+	/*Від - В Б Е*/
+	.test-1--margin{
+	height: 20%;
+	max-height: 20%;
+	min-height: 20%;
+	/* max-block-size: 10%;
+	min-block-size: 10%;  */
+	background-color: #49d0b1;
+	padding: 1%;
+	border-radius: 1rem;
+}
+	/* !!! Але батьківський елемент має мати вказану висоту*/
+	/* 
+	position: relative;
+	bottom: 20%;
+	top: 20%;
+	inset-block: 50%; 
+	*/
+.test-2{
+	/*Від в'юпорта*/
+/*від ширини*/
+position: fixed;
+left: 50%;
+right: 10%;
+/* inset-inline: 20%; */
+padding: 1%;
+border-radius: 1rem;
+
+/*від висоти*/
+/* position: fixed; */
+top: 20%;
+/* bottom: 20%;
+inset-block: 20%; */
+background-color: #5371a9;
+}
+
+/* Від батьківського елементу, у якого position відмінний від static*/
+/*від ширини*/
+.test-3{
+position: absolute;
+top: 8rem;
+left: 50%;
+right: 20%;
+/* inset-inline: 20%; */
+background-color: #e46eff;
+border-radius: 1rem;
+padding: 1%;
+}
+
+/*від висоти*/
+.test-4{
+position: absolute;
+top: 40%;
+bottom: 50%;
+/* inset-block: 20%; */
+background-color: #670c7c;
+border-radius: 1rem;
+padding: 1%;
+}
+/*від розміру шрифту за замовченням, поточного або успадкованого*/
+.test-4{
+font-size: 120%;
+line-height: 120%;
+}
+/*від розмірів самого елементу*/
+.test-3{
+transform: translate(20%, 30%);
+}
+
+/* REM */
+/* відносно шрифту за замовченням */
+/* 1rem = 16px (розмір шрифту за замовченням) */
+.rem-test--margin{
+	width: 30rem;  /* (32px) */
+}
+
+/* EM */
+/* відносно поточного шрифту або успадкованого розміру шрифту */
+.em-test--margin{
+	font-size: 1.25rem;
+	inline-size: 15em;
+	block-size: 10.125rem;
+	background-color: #49d0b1;
+	border-radius: 0.625rem;
+	padding: 0.625rem;
+}
+
+/* 1. Коли треба прив'язатись до поточного або успадкованого розміру шрифту */
+.title{
+	font-size: 2.25rem;
+	line-height: 1.25;
+	margin-bottom: 0.75em;
+}
+
+/*Коли ми використовуємо EM ?*/
+/* 2. у @media */
+@media (max-width: 50em){
+	/* 800/16 */
+	.title{
+		font-size: 1rem;
+	}
+}
+/* ! У всіх інших випадках використовуємо REM */
+/* 
+Одиниці в'юпорту
+VW - відносно ширини
+VH - відносно висоти
+VMAX - більший розмір
+VMIN - менший розмір
+SVH, LVH, DVH
+SVW, LVW, DVW
+*/
+.hero--margin{
+	position: relative;
+	background-color: #076c55;
+	height: 100svh;
+	padding: 0.625rem;
+}
+
+/* CALC */
+/* Дозволяє виконувати обчислення в CSS*/
+.calc{
+	width: calc(100% - 10rem);
+	background-color: #273756;
+	padding: 1%;
+	border-radius: 1rem;
+}
+/*CLAMP*/
+/* Встановлює межі значення властивості, а також проміжне значення */
+.clamp--margin{
+	font-size: clamp(16px, 5vw, 32px);
+	background-color: #9f19ff;
+}
+/* MIN, MAX */
+.minmax--margin{
+	width: min(400px, 100%);
+	background-color: #d14383;
+	padding: 1rem;
+}
+/*змінні в CSS*/
+/* Об'ява глобальної змінної*/
+:root {
+	--colorMain: #ff0000;
+	--colorMain2: #0800ff;
+}
+/*Використання глобальної змінної*/
+.block--margin{
+	color: var(--colorMain);
+	background-color: #328e78;
+	padding: 1rem;
+}
+/*Об'ява і використання приватної змінної*/
+.content--margin{
+	--colorMain2: #666;
+	color: var(--colorMain2);
+	background-color: #328e78;
+	padding: 1rem;
+}
+.text--margin{
+	color: var(--colorMain2);
+	background-color: #328e78;
+	padding: 1rem;
+}
+/* POINTER - EVENTS*/
+/* Вимикає взаємодію з об'єктом*/
+.pointer-events--margin{
+	pointer-events: none;
+	background-color: #328e78;
+	padding: 1rem;
+}
+.pointer-events--margin span{
+	outline: 1px solid #b7ff00;
+	outline-offset: 1px;
+}
+@media (max-width: 50em){
+	.pointer-events--margin{
+		pointer-events: auto;
+	}
+	.pointer-events--margin span{
+		outline: 2px solid #ff0000;
+		outline-offset: 1px;
+	}
+}
+/*CURSOR*/
+/*встановлює стиль курсору*/
+.pointer-events--margin span{
+	cursor: grab; /*у вигляді маленької руки*/
+	/* cursor: pointer;   у вигляді руки з вказівним пальцем */
+}
+
+/*inset*/
+/*універсальна властивість top, right, bottom, left*/
+	/* inset: 20px 10px 30px 5px; */
+
+	/*Плавна прокрутка при target*/
+html{
+	scroll-behavior: smooth;
+}
+
+/*Змішування шарів mix-bland-mode*/
+/*змішування шарів (кольорів) - при накладанні об'єктів*/
+
+/*Ізоляція об'єкту від накладання isolation: isolate;*/
+
+/*Вертикальний текст*/
+.vertical-text--margin{
+	display: inline-block;
+	writing-mode: vertical-lr;
+	padding: 1rem;
+}
+.vertical-text2--margin{
+	display: inline-block;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	padding: 1rem;
+}
+.vertical-text3--margin{
+	display: inline-block;
+	writing-mode:sideways-lr;
+	padding: 1rem;
+}
+
+/*Дзеркальне відображення*/
+.page__container p{
+	transform: scale(-1, 1);
+	padding: 1rem;
+	outline: 1px solid #666;
+	margin-bottom: 2rem;
+}
+.page__container h2{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+/* Логічні властивості */
+/*! У @media запитах продовжуємо використовувати фізичні властивості*/
+/*розміри*/
+.logical{
+	display: inline-block;
+	block-size: 6.25rem;  
+	inline-size: 6.25rem;
+	background-color: #29afaf;
+	padding: 1rem;
+	font-size: 0.7rem;
+	border-radius: 0.5rem;
+	margin-right: 2rem;
+}
+/*
+width: 100px;
+max-width: 100px;
+min-width: 100px;
+
+inline-size: 100px;
+max-inline-size: 100px;
+min-inline-size: 100px;
+
+
+height: 100px;
+max-height: 100px;
+min-height: 100px;
+
+block-size: 100px;
+max-block-size: 100px;
+min-block-size: 100px;
+*/
+
+/*відступи*/
+.logical2{
+	display: inline-block;
+	block-size: 10.25rem;  
+	inline-size: 10.25rem;
+	background-color: #29afaf;
+	padding-inline-start: 1rem;
+	padding-inline-end: 1.5rem;
+	padding-block-start: 0.5rem;
+	padding-block-end: 2rem;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+}
+/*
+padding-left: 10px;
+padding-right: 10px;
+
+padding-inline-start: 10px;
+padding-inline-end: 10px;
+
+Відразу на початку і в кінці
+padding-inline: 10px;
+
+
+padding-top: 10px;
+padding-bottom: 10px;
+
+padding-block-start: 10px;
+padding-block-end: 10px;
+
+Відразу на початку і в кінці
+padding-block: 10px;
+
+padding: 10px;
+padding-inline: 10px;
+padding-block: 10px;
+
+
+margin-left: 10px;
+margin-right: 10px;
+
+margin-inline-start: 10px;
+margin-inline-end: 10px;
+
+Відразу на початку і в кінці
+margin-inline: 10px;
+
+margin: 0 auto;
+margin-inline: auto;
+
+
+margin-top: 10px;
+margin-bottom: 10px;
+
+margin-block-start: 10px;
+margin-block-end: 10px;
+
+Відразу на початку і в кінці
+margin-block: 10px;
+
+margin: 10px; 
+margin-inline: 10px;
+margin-block: 10px;
+*/
+
+/*ПОЗИЦІОНУВАННя*/
+/*
+left: 10px;
+right: 10px;
+top: 10px;
+bottom: 10px;
+
+inset-inline-start: 10px;
+inset-inline-end: 10px;
+inset-block-start: 10px;
+inset-block-end: 10px;
+
+Відразу на початку і в кінці
+inset-inline: 10px;
+inset-block: 10px;
+*/
+/*! Універсальна властивість, але тільки для фізичних значень (top, right, bottom, left) */
+.example{
+	inset: 10px;
+}
+/* ГРАНИЦІ */
+/*
+border-left: 1px solid green;
+border-right: 1px solid green;
+border-top: 1px solid green;
+border-bottom: 1px solid green;
+
+border-inline-start: 1px solid green;
+border-inline-end: 1px solid green;
+border-block-start: 1px solid green;
+border-block-end: 1px solid green;
+
+Відразу на початку і в кінці 
+border-inline: 1px solid green;
+border-block: 1px solid green;
+*/
+
+/* ТА ІНШІ */
+/*
+text-align: left;
+text-align: right;
+
+text-align: start;
+text-align: end;
+
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+
+border-start-start-radius: 10px;
+border-start-end-radius: 10px;
+border-end-start-radius: 10px;
+border-end-end-radius: 10px;
+
+
+resize: vertical;
+resize: horizontal;
+
+resize: block;
+resize: inline;
+
+В майбутньому цей список буде збільшуватись
+
+
+overflow-y: none;
+overflow-x: none;
+
+Поки немає підтримки браузерів 
+
+https://caniuse.com/?search=overflow-block
+https://caniuse.com/?search=overflow-inline
+
+overflow-block: none;
+overflow-inline: none;
+*/
+/* !Контейнерний запит для елемента - це його зміна на основі його контейнера, а не усієї області перегляду. */
+.title-container{
+	container-type: inline-size;
+	container-name: title-change;
+	padding: 2rem;
+	outline: 1px solid #666;
+	margin-top: 2rem;
+	font-size: 1.2rem;
+}
+@container title-change (max-width: 700px) {
+	h3{
+		color: red;
+		font-size: 2rem;
+	}
+}
+
+/*SUBGRID - дозволяє вкладеним елементам
+ успадковувати сіткову структуру батьківського контейнера*/
+ .parent-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+ }
+ /* Потім, для вкладеного елемента, визначте його як subgrid: */
+ .child-container {
+	display: grid;
+	grid-template-columns: subgrid;
+ }
+
+ /* CLIP-PATH  використовується для обрізання (вирізання) елемента
+  шляхом визначення області, яка залишається видимою, і області, яка приховується*/
+  .element {
+	clip-path: circle(50%);
+ }
+ /* У цьому прикладі ми використовуємо clip-path для обрізання елемента в форму кола.
+  Круг буде мати діаметр, рівний 50% ширини та висоти елемента, і все, що знаходиться поза цим колом, буде вирізано. */
+ .element {
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+ }
+ /* У цьому прикладі ми використовуємо clip-path для обрізання елемента в форму чотирикутника. 
+ За допомогою значення polygon() вказуємо координати вершин чотирикутника, і все, що знаходиться поза цим чотирикутником, буде вирізано. */
+ /* https://bennettfeely.com/clippy/ */
+
+ /*Scroll-margin-top визначає верхнє поле області прив'язки прокручування, яке використовується для прив'язки цього поля до порту прив'язки.*/
