@@ -472,7 +472,7 @@ overflow-block: none;
 overflow-inline: none;
 */
 /* !Контейнерний запит для елемента - це його зміна на основі його контейнера, а не усієї області перегляду. */
-/* .title-container{
+.title-container{
 	container-type: inline-size;
 	container-name: title-change;
 	padding: 2rem;
@@ -485,7 +485,7 @@ overflow-inline: none;
 		color: red;
 		font-size: 2rem;
 	}
-} */
+}
 
 /*SUBGRID - дозволяє вкладеним елементам
  успадковувати сіткову структуру батьківського контейнера*/
@@ -501,9 +501,18 @@ overflow-inline: none;
 
  /* CLIP-PATH  використовується для обрізання (вирізання) елемента
   шляхом визначення області, яка залишається видимою, і області, яка приховується*/
-  /* .element {
+  .element {
+	width: 10rem;
+	height: 10rem;
+	background-color: #9f19ff;
 	clip-path: circle(50%);
- } */
+ }
+  .element2 {
+	width: 10rem;
+	height: 10rem;
+	background-color: #9f19ff;
+	clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+ }
  /* У цьому прикладі ми використовуємо clip-path для обрізання елемента в форму кола.
   Круг буде мати діаметр, рівний 50% ширини та висоти елемента, і все, що знаходиться поза цим колом, буде вирізано. */
  /* .element {
