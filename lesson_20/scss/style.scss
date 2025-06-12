@@ -1,1 +1,237 @@
 @use "_reset";
+@use "sass:math";
+
+// SASS - назва препроцесора 
+// SCSS - це варіант синтаксису препроцесора SASS
+
+// синтаксис SCSS
+body {
+	color: red;
+	font-size: 20px;
+}
+.block{
+	width: 200px;
+	border: 1px solid #000;
+}
+
+// !Супер сила №1 КОМЕНТАРІ
+
+/* я потраплю у css*/
+// я не потраплю в css
+
+// !Суперсила №2 ЗМІННІ
+
+// назва змінної
+// 1 Англійська мова
+// 2 стиль loweCamelCase
+// 3 адекватно відображати що містить змінна
+
+// Глобально
+$mainColor: #fff;
+
+// Локально
+.body{
+	$mainColor: #000;
+	color: $mainColor;
+}
+
+// !Супер сила №3 ВКЛАДЕНІСТЬ
+
+// синтаксис CSS
+.text span{
+	color: green;
+	font-size: 20px;
+}
+
+.text.page__text{
+	color: green;
+	font-size: 20px;
+}
+
+.page .text{
+	color: orange;
+}
+
+// синтаксис SCSS
+.text{
+	span{
+		color: green;
+		font-size: 20px;
+	}
+	&.page__text{
+		color: green;
+		font-size: 20px;
+	}
+	.page & {
+		color: orange;
+	}
+}
+
+.block {
+	// .block__container
+	&__container {
+	}
+	// .block__title
+	&__title {
+		font-size: 1.5rem;
+	}
+	// .block__items
+	&__items {
+	}
+	// .block__item
+	&__item {
+		color: green;
+	}
+	// .block__item--red
+	&__item--red {
+		color: red;
+	}
+}
+
+// Вкладеність псевдокласів
+// вкладеність псевдоелементів і т. д.
+
+// css
+// .text::before{}
+// .text::after{}
+// .text:hover{}
+// .text:hover::before{}
+
+// SCSS
+.text {
+	color: green;
+	&::before {
+		background-color: red;
+		content:'';
+	}
+	&::after {
+
+	}
+	&:hover {
+		color: red;
+		&::before{
+			background-color: greenyellow;
+			content:'';
+		}
+	}
+	&:last-child{
+
+	}
+	&:not(:last-child){
+
+	}
+	&:nth-child(5){
+
+	}
+}
+
+// Вкладеність медіазапитів
+
+// CSS
+.text {
+	display: flex;
+	flex-direction: column;
+}
+@media (max-width: toEm(800px)){
+	  .text{
+		flex-direction: column-reverse;
+	  }
+}
+
+// SCSS
+
+.text{
+	display: flex;
+	flex-direction: column;
+	@media (max-width: toEm(800px)){
+		flex-direction: column-reverse;
+	}
+}
+
+// ! супер сила №4 
+// @extend, шаблони %
+// перевикористання коду, використання шаблону коду
+
+// css
+.button,
+.page__button {
+	padding: 10px 20px;
+	font-size: 20px;
+	background-color: #000;
+}
+
+//SCSS
+.button{
+	padding: 10px 20px;
+	font-size: 20px;
+	background-color: #000;
+}
+.page__button{
+	@extend .button; // та додати додаткові стилі ниджче
+	padding: 30px;
+}
+
+// Шаблони
+
+%button {
+	padding: 10px 20px;
+	font-size: 20px;
+	background-color: #000;
+}
+
+.page__button{
+	@extend %button;
+	color: #fff;
+	font-size: 30px;
+}
+
+// ! супер сила №5
+// @mixin та @include
+
+// назва міксіну:
+// 1. Англ
+// 2. стиль lowerCamelCase
+// 3. адекватно відображати що він містить
+
+@mixin box($width: 100px, $height: 500px, $bgColor: green, $borderColor: blue){
+	width: $width;
+	height: $height;
+	background-color: $bgColor;
+	border: 1px solid $borderColor;
+}
+.block{
+	@include box(50px, 200px, brown, white)
+}
+.text{
+	@include box(30px, 600px, yellow, green)
+}
+
+// функція
+
+// @function percent($num1, $num2) {
+// 	$rez: math.div($num1, $num2) * 100%;
+// 	@return $rez;
+// }
+.test {
+	width: percent(400, 1200);
+	font-size: toRem(24);
+	margin-bottom: toEm(20, 24);
+	@media (max-width: toEm(767.98)) {
+		font-size: toRem(20);
+	}
+}
+
+// ! супер сила №6
+// ОПЕРАТОРИ
+
+// множення *
+// додавання +
+// віднімання -
+// math.div(num 1, num 2)
+
+.block{
+	width: 100px - 10px;
+	max-width: 100px * 2;
+	min-width: 100px + 20px;
+	height: math.div(100, 200);
+}
