@@ -714,6 +714,23 @@ const andrii = {
 }
 andrii.sayHi()
 
+function Person(name, age, spec, city){
+	this.name = name;
+	this.age = age;
+	this.spec = spec;
+	this.city = city;
+	this.sayHi = function(name, age, spec, city){
+		console.log(`Привіт, мене звати ${this.name}, мені ${this.age} років, я із міста ${this.city}`)
+	}
+}
+const mykola = new Person(`Mykola`, 33, `qi ingenier`, `Lviv`)
+console.log(mykola)
+
+const olena = new Person(`Olena`, 25, `bloger`, `Kyiv`)
+console.log(olena)
+
+console.log(andrii)
+
 // console.log(andrii)
 
 // function sayHi(name, age, spec, city){
