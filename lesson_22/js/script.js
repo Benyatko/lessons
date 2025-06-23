@@ -674,62 +674,62 @@ function goToViewport(code) {
 // }
 
 
-function calcDivide(x, y){
-	let result = x / y
-	return(result)
-}
-let example = calcDivide(30, 15)
-console.log(example)
+// function calcDivide(x, y){
+// 	let result = x / y
+// 	return(result)
+// }
+// let example = calcDivide(30, 15)
+// console.log(example)
 
 
-function calcMult(x, y){
-	let result = x * y
-	return(result)
-}
-let example2 = calcMult(20, 40)
-	console.log(example2)
+// function calcMult(x, y){
+// 	let result = x * y
+// 	return(result)
+// }
+// let example2 = calcMult(20, 40)
+// 	console.log(example2)
 
 
-function calcMinus(x, y){
-	let result = x - y
-	return(result)
-}
-let example3 = calcMinus(10, 5)
-console.log(example3)
+// function calcMinus(x, y){
+// 	let result = x - y
+// 	return(result)
+// }
+// let example3 = calcMinus(10, 5)
+// console.log(example3)
 
-let example4 = calcMult(calcMinus(500, 450), calcDivide(100, 2))
-console.log(example4)
-
-
+// let example4 = calcMult(calcMinus(500, 450), calcDivide(100, 2))
+// console.log(example4)
 
 
-const andrii = {
-	name: `Andrii`,
-	age: 37,
-	speciality: `web-developer`,
-	city: `Brody`,
-	sayHi: function(name, age, spec, city){
-		console.log(`Привіт, мене звати ${this.name}, мені ${this.age} років, я із міста ${this.city}`)
-	}
-}
-andrii.sayHi()
 
-function Person(name, age, spec, city){
-	this.name = name;
-	this.age = age;
-	this.spec = spec;
-	this.city = city;
-	this.sayHi = function(name, age, spec, city){
-		console.log(`Привіт, мене звати ${this.name}, мені ${this.age} років, я із міста ${this.city}`)
-	}
-}
-const mykola = new Person(`Mykola`, 33, `qi ingenier`, `Lviv`)
-console.log(mykola)
 
-const olena = new Person(`Olena`, 25, `bloger`, `Kyiv`)
-console.log(olena)
+// const andrii = {
+// 	name: `Andrii`,
+// 	age: 37,
+// 	speciality: `web-developer`,
+// 	city: `Brody`,
+// 	sayHi: function(name, age, spec, city){
+// 		console.log(`Привіт, мене звати ${this.name}, мені ${this.age} років, я із міста ${this.city}`)
+// 	}
+// }
+// andrii.sayHi()
 
-console.log(andrii)
+// function Person(name, age, spec, city){
+// 	this.name = name;
+// 	this.age = age;
+// 	this.spec = spec;
+// 	this.city = city;
+// 	this.sayHi = function(name, age, spec, city){
+// 		console.log(`Привіт, мене звати ${this.name}, мені ${this.age} років, я із міста ${this.city}`)
+// 	}
+// }
+// const mykola = new Person(`Mykola`, 33, `qi ingenier`, `Lviv`)
+// console.log(mykola)
+
+// const olena = new Person(`Olena`, 25, `bloger`, `Kyiv`)
+// console.log(olena)
+
+// console.log(andrii)
 
 // console.log(andrii)
 
@@ -738,3 +738,17 @@ console.log(andrii)
 // }
 
 // sayHi(andrii.name, andrii.age, andrii.speciality, andrii.city)
+
+class Person{
+	constructor(name, age, spec, city){
+		this.name = name;
+		this.age = age;
+		this.spec = spec;
+		this.city = city;
+	}
+	sayHi(){
+		console.log(`Привіт, мене звати ${this.name}, мені ${this.age} років, я із міста ${this.city}`)
+}
+}
+const olena = new Person(`Olena`, 25, `bloger`, `Kyiv`)
+console.log(olena)
