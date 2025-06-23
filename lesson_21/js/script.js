@@ -502,6 +502,8 @@ console.log(userAge) // Значення
 // Взяття залишку від ділення (%)
 // Приклад varOne-(varTwo*varTwo) = 1
 // Приклад 10-(3*3) = 1
+// let varOne = 20
+// let varTwo = 6
 // let varRes = varOne % varTwo
 // console.log(typeof varRes)
 // console.log(varRes)
@@ -576,3 +578,103 @@ if (0) {
 }
 console.log(someVar)
 */
+
+// ПРАКТИКА 13/06/2025
+// let userAge = 15
+// let userAge2 
+// userAge2 = userAge
+// console.log(userAge2)
+
+// let name = `Андрій`
+// let greeting = `Привіт, ${name}!`
+// console.log(greeting)
+
+// let someString = `Hello world !!!`
+// console.log(someString.length)
+// console.log(someString [3])
+// console.log(someString [8])
+// console.log(2 + 1)
+
+// let someWords = `heLLo worlD 2025`
+// console.log(someWords.toUpperCase())
+// console.log(someWords.toLowerCase())
+
+// let someThing = `Hello! How you doing?`
+// console.log(someThing.includes('How'))
+// console.log(someThing.includes('wo'))
+// console.log(someThing.startsWith('wo'))
+// console.log(someThing.endsWith('?'))
+
+//Пошук та заміна REPLACE
+// let someStrings = `Hi men! How yours going?`
+// someStrings = someStrings.replace(`Hi`, `HELLOO`)
+// console.log(someStrings)
+
+//Округлення в меншу сторону
+// let someNotRoundNum = 25.8
+// console.log(Math.floor(someNotRoundNum))
+
+//Округлення в більшу сторону
+// let someNotRoundNum = 25.8
+// console.log(Math.ceil(someNotRoundNum))
+
+//Округлення до ближнього цілого
+// let someNotRoundNum = 25.5
+// console.log(Math.round(someNotRoundNum))
+
+// модуль числа
+// let someNotRoundNum = -29.6
+// console.log(Math.abs(someNotRoundNum))
+
+// RANDOM числа
+// console.log(Math.random())
+
+// виводить максимальне та мінімальне із наведених чисел
+// console.log(Math.max(1, 4, -8))
+// console.log(Math.min(1, 4, -8))
+// let numMax = Math.max(1, 4, -8) // присвоєння змінній максимального числа
+// console.log(numMax)
+
+// let someVar = `35.5px`
+// let someNum = parseInt(someVar);
+// console.log(someVar)
+// let someNum = parseFloat(someVar)
+// console.log(someNum)
+
+// for (let i = 0; i < 10; i++){
+// 	console.log(i)
+// }
+
+// let x = 15
+// console.log(x + 5)
+
+// console.log(typeof 'Hello world!');
+
+// let a = 10;
+// let b = '20';
+// console.log(a * b);
+
+// console.log(10 / '2');
+
+// let c = 10;
+// let y = 2;
+// console.log(c - y);
+
+// let num = 3.14159;
+// console.log(num.toFixed(2));
+
+// let arr = [1, 2, 3];
+// console.log(arr.length);
+
+// let sum = 10 + 'Igor';
+// let subtract = 10 - 'Igor';
+// let div = 35 / '-1';
+// let div1 = 35 / 0;
+// let multiply = 10 * '10';
+// let mod = 10 % '10';
+
+// console.log(mod)
+
+// let someString = `Привіт світ я вивчаю JAVASCRIPT !!!`
+// let someNewString = someString.slice(3, 12)
+// console.log(someNewString)
