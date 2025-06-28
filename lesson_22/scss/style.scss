@@ -415,34 +415,75 @@ body {
 
 // $someWidth: 100;
 // SCSS
-.list {
-	color: #fff;
-	// .list__item
-	&__item {
-		font-size: 20px;
-		visibility: hidden;
-		transform: translate(-100%, 0);
-		opacity: 0;
-		animation: show-items 1s ease forwards;
-		&:not(:last-child) {
-			margin-bottom: 20px;
-		}
-		@for $i from 1 through 7 {
-			&:nth-child(#{$i}) {
-				$delay: ($i - 1) * 0.2;
-				animation-delay: #{$delay}s;
-			}
-		}
-	}
-	// width: #{$someWidth}px;
+// .list {
+// 	color: #fff;
+// 	// .list__item
+// 	&__item {
+// 		font-size: 20px;
+// 		visibility: hidden;
+// 		transform: translate(-100%, 0);
+// 		opacity: 0;
+// 		animation: show-items 1s ease forwards;
+// 		&:not(:last-child) {
+// 			margin-bottom: 20px;
+// 		}
+// 		@for $i from 1 through 7 {
+// 			&:nth-child(#{$i}) {
+// 				$delay: ($i - 1) * 0.2;
+// 				animation-delay: #{$delay}s;
+// 			}
+// 		}
+// 	}
+// 	// width: #{$someWidth}px;
+// }
+
+// @keyframes show-items {
+// 	0% {
+// 	}
+// 	100% {
+// 		opacity: 1;
+// 		visibility: visible;
+// 		transform: translate(0px, 0%);
+// 	}
+// }
+header
+h1{
+	padding: 3.125rem 0;
+	font-size: 2.8125rem;
+}
+.btn {
+	font-size: 1.125rem;
+	height: 2.5rem;
+	width: 12.5rem;
+	border: 1px solid #fff;
+	border-radius: 0.625rem;
+	margin-bottom: 1rem;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+.text{
+	outline: 1px solid #fff;
+	border-radius: 0.625rem;
+	padding: 0.625rem;
 }
 
-@keyframes show-items {
-	0% {
-	}
-	100% {
-		opacity: 1;
-		visibility: visible;
-		transform: translate(0px, 0%);
-	}
+.text-hidden{
+	display: none;
+}
+
+.hidden{
+	display: none;
+}
+
+.list-header{
+	outline: 1px solid;
+	padding: 0.625rem;
+	font-size: 1.25rem;
+}
+.list-content{
+	background-color: #989898;
+	outline: 1px solid;
+	padding: 0.625rem;
 }

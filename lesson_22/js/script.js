@@ -739,16 +739,53 @@ function goToViewport(code) {
 
 // sayHi(andrii.name, andrii.age, andrii.speciality, andrii.city)
 
-class Person{
-	constructor(name, age, spec, city){
-		this.name = name;
-		this.age = age;
-		this.spec = spec;
-		this.city = city;
+// class Person{
+// 	constructor(name, age, spec, city){
+// 		this.name = name;
+// 		this.age = age;
+// 		this.spec = spec;
+// 		this.city = city;
+// 	}
+// 	sayHi(){
+// 		console.log(`Привіт, мене звати ${this.name}, мені ${this.age} років, я із міста ${this.city}`)
+// }
+// }
+// const olena = new Person(`Olena`, 25, `bloger`, `Kyiv`)
+// console.log(olena)
+
+// let userName = [`andrii`, 20, `mykola`, `ivan`]
+// !userName.includes(10) ? userName.push(10) : null
+// console.log(userName)
+
+// let someNames = [`andy`, `vasyl`, `robert`]
+// let someString = someNames.join(', ')
+// // console.log(typeof someString)
+// console.log(someString)
+
+const button = document.querySelector(`#button`)
+const content = document.querySelector(`#content`)
+
+// Простий метод
+
+/*button.addEventListener(`click`, function(){
+	console.log(`click!!!`)
+	content.classList.toggle(`text-hidden`)
+
+	if(content.classList.contains(`text-hidden`)){
+		button.textContent = `Відкрити блок`
+	} else {
+		button.textContent = `Закрити блок`
 	}
-	sayHi(){
-		console.log(`Привіт, мене звати ${this.name}, мені ${this.age} років, я із міста ${this.city}`)
-}
-}
-const olena = new Person(`Olena`, 25, `bloger`, `Kyiv`)
-console.log(olena)
+})*/
+
+// Швидкий метод
+
+/*button.addEventListener(`click`, function(){
+	console.log(`click!!!`)
+
+	if(content.classList.toggle(`text-hidden`)){
+		button.textContent = `Відкрити блок`
+	} else {
+		button.textContent = `Закрити блок`
+	}
+})*/
