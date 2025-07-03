@@ -1,0 +1,33 @@
+@use "_reset.scss";
+
+[class*='__container']{
+	max-width: 75rem;
+	margin: 0 auto;
+}
+header{
+	padding: 3rem 0;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+}
+body{
+	font-size: 1.25rem;
+	background-color: transparent;
+}
+body.change{
+	background-color: #6666;
+}
+.page__container{
+	padding: 3.125rem 0;
+}
+.item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 18.75rem;
+	height: 18.75rem;
+	background-color: #c46262;
+	padding: 0.625rem 2rem;
+	border-radius: 0.375rem;
+	border: 1px solid #000;
+}

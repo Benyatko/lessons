@@ -74,3 +74,4 @@ const value = parseInt(link.getAttribute('data-value'), 10);
 if (value < 200) {
   link.style.color = 'red';
 }
+
