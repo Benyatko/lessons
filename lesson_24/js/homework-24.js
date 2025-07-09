@@ -103,3 +103,34 @@ function changeClass(element){
 //     }
 //   }, delay);
 // }
+
+
+
+
+// *** НЕ ВІРНО ***
+
+// const numOne = 1
+// const numTwo = 2
+
+// function divide(numOne, numTwo) {
+// 	if (b === 0) {
+// 	  return 'Помилка: ділення на нуль';
+// 	}
+// 	return a / b;
+//  }
+//  console.log(`Результат: ${divide}`)
+
+// *** ВІРНО ***
+
+const numOne = 1;
+const numTwo = 2;
+
+function divide(a, b) {
+  if (b === 0) {
+    return 'Помилка: ділення на нуль';
+  }else{
+  return a / b;
+}
+}
+
+console.log(`Результат: ${divide(numOne, numTwo)}`);
